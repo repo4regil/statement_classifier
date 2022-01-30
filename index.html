@@ -1,0 +1,13 @@
+<html>
+<h1>Predicting Context of statements</h1>
+<h3>Enter statement</h3>
+<form action="{{url_for('predict')}}" method="post">
+    <input type='text' name="statement" placeholder='Statement' required="required" />
+    <button type="submit" class ='btn' > Predict</button>
+</form>
+
+<br>
+<br>
+{{prediction_text}}
+
+</html>
